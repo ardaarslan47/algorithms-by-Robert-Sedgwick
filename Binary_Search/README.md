@@ -2,20 +2,31 @@
 
 This Java program implements binary search to determine whether a given real number exists in a sorted array of real numbers.
 
-## Algorithm
+## Algorithm Steps
 
-0. ∀k ∈ R, ∀A where A is a sorted array of real numbers
-1. 
-    1.1. Initialize two integer 'lo' and 'hi'
-    1.2. Set 0 to 'lo' and 'last index of array' to 'hi'
-2. 
-    2.1. If lo > hi return - 1 and end
-    2.2. Initialize 'mid' and set arithmetic mean of 'lo' and 'hi' to it
-3. 
-    3.1. If k = A[mid] return found and end
-    3.2. If k greater than A[mid] set 'mid + 1' to 'lo' (so in next iteration we can check arithmetic mean of 'mid' and 'hi')
-    3.3. If k lesser than A[mid] set 'mid - 1' to 'hi' (so in next iteration we can check arithmetic mean of 'lo' and 'mid')
-4. Return to step 2
+### Step 0: Initialization
+
+- For any real number `k` and a sorted array `A`, the algorithm aims to find if `A` contains `k`.
+
+### Step 1: Initialize Pointers
+
+1.1. Initialize two integer variables `lo` and `hi`.
+1.2. Set `lo` to `0` and `hi` to the index of the last element in the array.
+
+### Step 2: Check Bounds
+
+2.1. If `lo > hi`, the search space is empty. Return `-1` to indicate that `k` is not found and end the algorithm.
+2.2. Initialize the variable `mid` and set it to the arithmetic mean of `lo` and `hi`.
+
+### Step 3: Search and Update Pointers
+
+3.1. If `k` is equal to `A[mid]`, return `mid` to indicate that `k` is found and end the algorithm.
+3.2. If `k` is greater than `A[mid]`, update `lo` to `mid + 1` to narrow the search space to the upper half.
+3.3. If `k` is lesser than `A[mid]`, update `hi` to `mid - 1` to narrow the search space to the lower half.
+
+### Step 4: Repeat
+
+- Repeat steps 2-3 until the search space is empty or the element is found.
 
 ## Usage
 
