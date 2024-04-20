@@ -10,19 +10,19 @@ This Java program implements binary search to determine whether a given real num
 
 ### Step 1: Initialize Pointers
 
-1.1. Initialize two integer variables `lo` and `hi`.
-1.2. Set `lo` to `0` and `hi` to the index of the last element in the array.
+1. Initialize two integer variables `lo` and `hi`.
+2. Set `lo` to `0` and `hi` to the index of the last element in the array.
 
 ### Step 2: Check Bounds
 
-2.1. If `lo > hi`, the search space is empty. Return `-1` to indicate that `k` is not found and end the algorithm.
-2.2. Initialize the variable `mid` and set it to the arithmetic mean of `lo` and `hi`.
+1. If `lo > hi`, the search space is empty. Return `-1` to indicate that `k` is not found and end the algorithm.
+2. Initialize the variable `mid` and set it to the arithmetic mean of `lo` and `hi`.
 
 ### Step 3: Search and Update Pointers
 
-3.1. If `k` is equal to `A[mid]`, return `mid` to indicate that `k` is found and end the algorithm.
-3.2. If `k` is greater than `A[mid]`, update `lo` to `mid + 1` to narrow the search space to the upper half.
-3.3. If `k` is lesser than `A[mid]`, update `hi` to `mid - 1` to narrow the search space to the lower half.
+1. If `k` is equal to `A[mid]`, return `mid` to indicate that `k` is found and end the algorithm.
+2. If `k` is greater than `A[mid]`, update `lo` to `mid + 1` to narrow the search space to the upper half.
+3. If `k` is lesser than `A[mid]`, update `hi` to `mid - 1` to narrow the search space to the lower half.
 
 ### Step 4: Repeat
 
