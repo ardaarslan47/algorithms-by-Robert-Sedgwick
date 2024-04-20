@@ -7,7 +7,7 @@ This java program implements oklid algorithm to find greatest common divisor of 
 0. For any non-negative real number `p` and `q`, the algorithm aims to find the greatest common divisor of `p` and `q`.
 1. If q = 0 return p and end.
 2. Initialize r and set 'remainder of p / q' to it.
-3. Set q to p after set r to q and return step 1.
+3. Set q to p then set r to q and return step 1.
 
 ## Usage
 
